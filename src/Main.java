@@ -35,10 +35,22 @@ class Match {
     }
     public static void func3(double a, double b, double x){
         if (b != 0){
-            double y = a*x/b;
-            System.out.println(y);
+            double rez = a*x/b;
+            double rez1 = rez - Math.floor(rez);
+            if (rez1 == 0.0) {
+                System.out.println(getFactorial(rez));
+            } else {
+                System.out.println("У нецелого числа нет факториала!");
+            }
         } else {
             System.out.println("Ошибка, в знаменателе 0!");
         }
+    }
+    public static int getFactorial(double y) {
+        int result = 1;
+        for (int i = 1; i <= y; i++) {
+            result = result * i;
+        }
+        return result;
     }
 }
