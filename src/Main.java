@@ -9,9 +9,10 @@ public class Main {
         System.out.print("Введите х: ");
         double x = scan.nextDouble();
 
-        Match.func1(x);
-        Match.func2(a, b);
-        Match.func3(a, b, x);
+        Match zn1 = new Match(a, b, x);
+        zn1.func1(x);
+        zn1.func2(a, b);
+        zn1.func3(a, b, x);
     }
 }
 class Match {
