@@ -22,11 +22,11 @@ class Match {
         this.b = b;
         this.x = x;
     }
-    public static void func1(double x) {
+    public void func1(double x) {
         double rez = 3*x+5;
         System.out.println(rez);
     }
-    public static void  func2(double a, double b){
+    public void  func2(double a, double b){
         if(a-b != 0) {
             double rez = (a+b)/(a-b);
             System.out.println(rez);
@@ -34,7 +34,7 @@ class Match {
             System.out.println("Ошибка, в знаменателе 0!");
         }
     }
-    public static void func3(double a, double b, double x){
+    public void func3(double a, double b, double x){
         if (b != 0){
             double rez = a*x/b;
             double rez1 = rez - Math.floor(rez);
@@ -47,7 +47,7 @@ class Match {
             System.out.println("Ошибка, в знаменателе 0!");
         }
     }
-    public static int getFactorial(double y) {
+    public int getFactorial(double y) {
         int result = 1;
         for (int i = 1; i <= y; i++) {
             result = result * i;
